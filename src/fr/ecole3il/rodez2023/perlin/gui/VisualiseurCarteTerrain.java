@@ -49,6 +49,7 @@ public class VisualiseurCarteTerrain extends JFrame {
      * @param panelWidth La largeur du panneau.
      * @param panelHeight La hauteur du panneau.
      */
+
     public void drawCarte(Carte carte, Graphics g, int panelWidth, int panelHeight) {
         vte = new VisualiseurTerrainEnonce(carte);
         int largeur = carte.getLargeur();
@@ -215,7 +216,8 @@ public class VisualiseurCarteTerrain extends JFrame {
 
 			// Code pour générer la carte en fonction des paramètres choisis
 			if (generateurSelectionne.equals("GenerateurPerlin")) {
-				carte = new Carte("Nouvelle carte", largeur, hauteur, new GenerateurPerlin(graine));
+                double resolution = 0;
+                carte = new Carte("Nouvelle carte", largeur, hauteur, new GenerateurPerlin(graine, resolution));
 			} else {
 				carte = new Carte("Nouvelle carte", largeur, hauteur,
 						new GenerateurAleatoire(graine));
