@@ -39,4 +39,7 @@ public abstract class Bruit2D {
     protected double getResolution(){
         return resolution;
     }
+    public void setResolution(double resolution){
+        this.resolution = resolution;
+    }
 }
