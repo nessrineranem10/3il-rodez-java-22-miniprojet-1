@@ -48,11 +48,15 @@ public class Utils {
      * @author philibert roquart, fainéant
      */
     public static int[] melanger(int[] tab, long seed) {
-        // Mélanger le tableau de permutation en utilisant 
-    	// ...
-    	// Bon, je le ferai plus tard, je vais réviser l'espagnol
-    	// Je mets ça, ça marchera bien en attendant
-    	// tant pis
+        Random random = new Random(seed);
+        int j;
+        int tmp;
+        for (int i = tab.length - 1; i >= 1; i--){
+            j = random.nextInt(0,i + 1);
+            tmp = tab[j];
+            tab[j] = tab[i];
+            tab[i] = tmp;
+        }
         return tab;
     }
 

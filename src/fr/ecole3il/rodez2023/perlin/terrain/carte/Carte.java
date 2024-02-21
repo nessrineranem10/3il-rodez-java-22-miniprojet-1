@@ -37,8 +37,8 @@ public class Carte {
                 int temperature = scanner.nextInt();
                 scanner.nextLine(); // pour consommer le retour à la ligne
 
-                // Création du terrain avec les valeurs lues
-                terrains[i][j] = new Terrain(hydrometrie, temperature,altitude,nom);
+
+
             }
         }
 
@@ -95,8 +95,12 @@ public class Carte {
 
     // Méthode pour obtenir un terrain à une position donnée
     public Terrain getTerrain(int x, int y) throws TerrainInexistant {
-        if (x < 0 || x >= largeur || y < 0 || y >= hauteur) {
+        if (x < 0 || x >= largeur) {
             throw new TerrainInexistant("La case demandée est en dehors des limites de la carte.");
+        }
+        if (y < 0 || y >= hauteur){
+            throw new TerrainInexistant("La case demandée est en dehors des limites de la carte.");
+
         }
         return terrains[x][y];
     }
