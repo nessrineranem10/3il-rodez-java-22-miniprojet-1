@@ -37,6 +37,7 @@ public class GenerateurAleatoire extends GenerateurCarte {
     // Méthode pour générer un terrain spécifique (non utilisée dans ce générateur)
     @Override
     protected Terrain genererTerrain(int i, int j, int largeur, int hauteur) {
+
         return null;
     }
 
