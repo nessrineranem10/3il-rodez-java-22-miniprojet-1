@@ -23,7 +23,7 @@ Il n'y aurait aucune différence d'attributs.
 
 Question : Quel type utilisez vous ?
 
-Type double.
+Type double pour Hydrométrie,Température,Altitude.
 
 Question : Pourquoi sortir, selon vous, ce bout d'algorithme de la classe ?
 
