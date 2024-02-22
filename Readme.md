@@ -15,7 +15,7 @@ Question : Réaliser l'architecture que prendrait la forme d'une telle modélisa
 
 
 
-
+Il n'y aurait aucune différence d'attributs.
 
 
 
